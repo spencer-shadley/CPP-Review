@@ -84,6 +84,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Allocator.cpp" />
     <ClCompile Include="MyVector.h" />
     <ClCompile Include="OOPExamTwo.cpp" />
     <ClCompile Include="Queue.cpp" />

@@ -1,5 +1,6 @@
 #include <cassert>
 #include <utility>
+#include <deque>
 
 using namespace std::rel_ops;
 
@@ -25,7 +26,7 @@ private:
 	container_type _c;
 
 public:
-	explicit my_stack(const container_type& c = container_type()) : _c(C) {}
+	explicit my_stack(const container_type& c = container_type()) : _c(c) {}
 
 	my_stack(const my_stack&) = default;
 	~my_stack() = default;
