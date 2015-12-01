@@ -2,10 +2,14 @@
 #include <iostream>
 #include <utility>
 #include <deque>
+#include <vector>
 
 using namespace std::rel_ops;
 
-template<typename T, typename C = std::deque<T>>
+// using a deque or a vector should be the same right?
+template<typename T, typename C = std::vector<T>>
+// template<typename T, typename C = std::deque<T>>
+
 class my_stack {
 
 public:
