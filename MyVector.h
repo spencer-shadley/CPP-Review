@@ -51,14 +51,24 @@ public:
 		_a(move(rhs._a)),
 		_b(rhs._b),
 		_e(rhs._e) {
-		rhs.b = nullptr;
-		rhs.e = nullptr; // forces dstr to be called
+		rhs._b = nullptr;
+		rhs._e = nullptr; // forces dstr to be called
 	}
 
 	my_vector& operator=(const my_vector& rhs) {
 		my_vector that(rhs);
 		std::swap(_b, that._b);
 		std::swap(_e, that._e);
+		return *this;
+	}
+
+	my_vector& operator=(my_vector&& rhs) {
+		my_destroy(_a, _b, _e);
+		_a.deallocate(_b, size());
+		_b = rhs._b;
+		_e = rhs._e;
+		rhs._b = nullptr;
+		rhs._e = nullptr;
 		return *this;
 	}
 

@@ -6,11 +6,14 @@
 
 using namespace std::rel_ops;
 
+// any ideas on how to make this circular?
+
 template <typename T, typename C = std::vector<T>>
 class my_queue {
 
 private:
 	C collection;
+	size_t begIndex = 0; // only used for circular implementation
 
 public:
 
@@ -32,7 +35,7 @@ public:
 	}
 
 	void pop_front() {
-		collection.erase(collection.begin());
+		collection.erase(collection.begin()); // very bad O(N) (shouldn't use a vector or this should be circular)
 	}
 
 	void push_back(const T& v) {
