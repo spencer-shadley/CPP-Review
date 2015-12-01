@@ -1,0 +1,40 @@
+﻿Build started 11/29/2015 11:13:52 PM.
+     1>Project "b:\documents\visual studio 2013\Projects\OOPExamTwo\OOPExamTwo\OOPExamTwo.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MyVector.h OOPExamTwo.cpp
+         OOPExamTwo.cpp
+         MyVector.h
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(16): error C2653: 'allocator_type' : is not a class or namespace name
+                 b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(103) : see reference to class template instantiation 'my_vector<T,A>' being compiled
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(16): error C2146: syntax error : missing ';' before identifier 'value_type'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(17): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(17): error C2146: syntax error : missing ';' before identifier 'size_type'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(18): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(18): error C2146: syntax error : missing ';' before identifier 'difference_type'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(19): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(19): error C2146: syntax error : missing ';' before identifier 'pointer'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(20): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(20): error C2146: syntax error : missing ';' before identifier 'const_pointer'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(21): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(21): error C2146: syntax error : missing ';' before identifier 'reference'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(22): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(22): error C2146: syntax error : missing ';' before identifier 'const_reference'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(23): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(24): error C2653: 'allocator_type' : is not a class or namespace name
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(24): error C2146: syntax error : missing ';' before identifier 'const_iterator'
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(80): error C2535: 'my_vector<T,A>::reference my_vector<T,A>::at(my_vector<T,A>::size_type) const' : member function already defined or declared
+                 b:\documents\visual studio 2013\projects\oopexamtwo\oopexamtwo\myvector.h(75) : see declaration of 'my_vector<T,A>::at'
+         Generating Code...
+     1>Done Building Project "b:\documents\visual studio 2013\Projects\OOPExamTwo\OOPExamTwo\OOPExamTwo.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.78
