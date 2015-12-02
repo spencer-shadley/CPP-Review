@@ -43,8 +43,12 @@ class Maze {
 	AbstractDoor* door;
 
 	Maze& operator=(const Maze& rhs) {
-		room = rhs.room; // will this just use pointer equality? Do I need to dereference like this -> [    *(lhs.room) = *(rhs.room);     ] ?
-		door = rhs.door;
+		delete room;
+		delete door;
+		room = rhs.room;
+		(*room)(*(rhs.room));
+		// (*door)(*rhs.door);
+		return *this;
 	}
 
 public:
