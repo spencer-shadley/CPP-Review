@@ -45,9 +45,8 @@ class Maze {
 	Maze& operator=(const Maze& rhs) {
 		delete room;
 		delete door;
-		room = rhs.room;
-		(*room)(*(rhs.room));
-		// (*door)(*rhs.door);
+		*room = *(rhs.room);
+		*door = *(rhs.door);
 		return *this;
 	}
 
