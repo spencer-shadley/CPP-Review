@@ -49,14 +49,38 @@ class Maze {
 
 public:
 	Maze(AbstractRoom* r, AbstractDoor* d) : room(r), door(d) {}
-	Maze(const Maze& m) : 
-		room(m.room), 
+	Maze(const Maze& m) :
+		room(m.room),
 		door(m.door) {}
-	~Maze() { 
-		delete room; 
-		delete door; 
+	~Maze() {
+		delete room;
+		delete door;
 	}
 };
+
+// alternatively using templates
+/*
+template<typename R, typename D>
+class Maze {
+
+	R* room;
+	D* door;
+
+	Maze& operator=(const Maze& rhs) {
+		room = rhs.room; // will this just use pointer equality? Do I need to dereference like this -> [    *(lhs.room) = *(rhs.room);     ] ?
+		door = rhs.door;
+	}
+
+public:
+	Maze(R* r, D* d) : room(r), door(d) {}
+	Maze(const Maze& m) :
+		room(m.room),
+		door(m.door) {}
+	~Maze() {
+		delete room;
+		delete door;
+	}
+};*/
 
 class AbstractRoom {
 protected:
