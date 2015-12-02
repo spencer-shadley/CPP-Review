@@ -33,7 +33,7 @@
 	and depending on what you pass as you construct the maze objects determines what it is
 	sorry it's been a while
 
-	you cant change the code of GhostRoom and stuff to inhert from abstract room
+	you cant change the code of GhostRoom and stuff to inhert from abstract room -> wth am I supposed to do then?...
 
 **/
 
