@@ -2,6 +2,8 @@
 #include <iostream>
 #include <utility>
 
+// using only my notes
+
 using namespace std::rel_ops;
 
 template<typename T, typename A = std::allocator<T>>
