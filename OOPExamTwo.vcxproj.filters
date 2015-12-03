@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -32,10 +29,19 @@
     <ClCompile Include="MyVector.h">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StackNoTypedef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueCircularArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Allocator.cpp">
+    <ClCompile Include="SimpleVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Maze.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

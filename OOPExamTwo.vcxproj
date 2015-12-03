@@ -77,17 +77,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="StackDeque.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Allocator.cpp" />
+    <ClCompile Include="Maze.cpp" />
     <ClCompile Include="MyVector.h" />
     <ClCompile Include="OOPExamTwo.cpp" />
     <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="QueueCircularArray.cpp" />
+    <ClCompile Include="SimpleVector.cpp" />
+    <ClCompile Include="StackNoTypedef.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
