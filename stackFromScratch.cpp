@@ -1,14 +1,13 @@
 #include <cassert>
 #include <utility>
-#include <deque>
+#include <vector>
 
 // used only my notes
 
 using namespace std::rel_ops;
 
-template<typename T, typename C = std::deque<T>>
+template<typename T, typename C = std::vector<T>>
 class sstack {
-public:
 
 	friend bool operator==(const sstack& lhs, const sstack& rhs) {
 		return lhs.container == rhs.container;
@@ -32,7 +31,7 @@ public:
 
 	sstack(const sstack& s) = default;
 	~stack() = default;
-	stack& operator=(const stack&) = default;
+	stack& operator=(const stack& other) = default;
 
 	bool empty() const {
 		return container.empty();
